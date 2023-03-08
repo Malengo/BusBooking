@@ -14,7 +14,7 @@ class HomeViewController: BaseViewController {
         return view
     }()
     
-    var cityViewModel = CityViewModel()
+    var cityViewModel: CityViewModelProtocol = CityViewModel()
     
     // MARK: - LifeCicle
     override func viewDidLoad() {
@@ -109,7 +109,7 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 }
 
 // MARK: - CityViewModel Protocol
-extension HomeViewController: CityViewModelProtocol {
+extension HomeViewController: CityViewModelDelegate {
     func thereAreTravels(model: TravelViewModel) {
         let vc = ListTravelTableViewController()
         vc.travelViewModel = model

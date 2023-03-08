@@ -7,8 +7,14 @@
 
 import Foundation
 
+protocol TravelViewModelProtocol {
+    func selectTravel(at position: Int, completion: @escaping (Travel) -> ())
+    mutating func getTravel()
+    
+    var travels: [Travel] { get set }
+}
 
-struct TravelViewModel {
+struct TravelViewModel: TravelViewModelProtocol {
     
     var travels: [Travel] = []
     private var travel: Travel
@@ -18,7 +24,7 @@ struct TravelViewModel {
         getTravel()
     }
     
-    private mutating func getTravel() {
+    mutating func getTravel() {
         self.travels = Travels().travels.filter { $0 == self.travel }
     }
     
@@ -27,18 +33,4 @@ struct TravelViewModel {
     }
 }
 
-extension Date {
-    func getShortDate() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM, h:mm"
-        let short = formatter.string(from: self)
-        return short
-    }
-    
-    func getShortHour() -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm a"
-        let hourString = formatter.string(from: self)
-        return hourString
-    }
-}
+

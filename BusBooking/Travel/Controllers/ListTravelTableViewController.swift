@@ -14,7 +14,7 @@ class ListTravelTableViewController: UITableViewController {
         return view
     }()
     
-    var travelViewModel: TravelViewModel?
+    var travelViewModel: TravelViewModelProtocol?
     
     // MARK: - Life Cicle
     override func viewDidLoad() {

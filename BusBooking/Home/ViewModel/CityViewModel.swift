@@ -7,15 +7,24 @@
 
 import Foundation
 
-protocol CityViewModelProtocol: AnyObject {
+protocol CityViewModelProtocol {
+    func getTraveModel(_ cityDeparture: City, _ cityDestination: City)
+    func getCityByName(name: String) -> City?
+    func numberOfRows() -> Int
+    func getCity(at index: Int) -> City
+    
+    var delegate: CityViewModelDelegate? { get set }
+}
+
+protocol CityViewModelDelegate: AnyObject {
     func thereAreTravels(model: TravelViewModel)
     func thereAreNoTravels()
 }
 
-struct CityViewModel {
+struct CityViewModel: CityViewModelProtocol {
     
     private var cities: [City]
-    weak var delegate: CityViewModelProtocol?
+    weak var delegate: CityViewModelDelegate?
     
     init(){
         self.cities = Cities().list
