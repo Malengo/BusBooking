@@ -49,7 +49,7 @@ class SeatsCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return ((seatsViewModel?.bus?.seats.count ?? 0) / 2) / 2
+        return ((seatsViewModel?.bus.seats.count ?? 0) / 2) / 2
     }
     
     

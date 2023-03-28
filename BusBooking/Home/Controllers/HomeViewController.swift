@@ -72,6 +72,8 @@ class HomeViewController: BaseViewController {
         cityViewModel.delegate = self
         homeView.setTexFieldDelegate(view: self)
         homeView.picker.delegate = self
+        homeView.promotionCollection.delegate = self
+        homeView.promotionCollection.dataSource = self
     }
 }
 
@@ -122,6 +124,19 @@ extension HomeViewController: CityViewModelDelegate {
         
         self.present(alert, animated: true)
     }
+}
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PromotionCell", for: indexPath) as? PromotionCollectionViewCell else { return UICollectionViewCell()   }
+        return cell
+    }
+    
+    
 }
 
 

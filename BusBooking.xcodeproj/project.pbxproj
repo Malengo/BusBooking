@@ -33,6 +33,7 @@
 		CEBA896B28C7C000002205D7 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA896A28C7C000002205D7 /* Bus.swift */; };
 		CEBA896F28C7D676002205D7 /* SeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA896E28C7D675002205D7 /* SeatsView.swift */; };
 		CEBA897328C7DC09002205D7 /* SeatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA897228C7DC09002205D7 /* SeatsCollectionViewController.swift */; };
+		CEE381E229D31F3300374F43 /* PromotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		CEBA896A28C7C000002205D7 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		CEBA896E28C7D675002205D7 /* SeatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsView.swift; sourceTree = "<group>"; };
 		CEBA897228C7DC09002205D7 /* SeatsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewController.swift; sourceTree = "<group>"; };
+		CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				CE050D1A28AC08AB00C5DAB0 /* HomeView.swift */,
+				CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				CE2CABF428B915B1009C9F2D /* TravelViewModel.swift in Sources */,
 				CE527FDA28B7FA89002CE548 /* City.swift in Sources */,
 				CEB82E4F28D0B4E2008DB2D8 /* SeatsViewModel.swift in Sources */,
+				CEE381E229D31F3300374F43 /* PromotionCollectionViewCell.swift in Sources */,
 				CE2CABFA28B94979009C9F2D /* TravelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

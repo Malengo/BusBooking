@@ -54,7 +54,19 @@ class HomeView: UIView, ViewCodeProtocol {
         picker.isHidden = true
         return picker
     }()
-   
+    
+    private(set) lazy var promotionCollection: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        let collection = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collection.clipsToBounds = true
+        collection.layer.cornerRadius = 8
+        collection.backgroundColor = .systemGray5
+        collection.register(PromotionCollectionViewCell.self, forCellWithReuseIdentifier: "PromotionCell")
+        collection.translatesAutoresizingMaskIntoConstraints = false
+        return collection
+    }()
     // MARK: - Stack Components
     private(set) lazy var searchView: UIView = {
         var view = UIView()
@@ -86,6 +98,7 @@ class HomeView: UIView, ViewCodeProtocol {
     func buildViewHierachy() {
         addSubview(searchView)
         addSubview(buttonSearchTicket)
+        addSubview(promotionCollection)
         addSubview(picker)
         searchView.addSubview(stackDestination)
         searchView.addSubview(swapButton)
@@ -121,6 +134,10 @@ class HomeView: UIView, ViewCodeProtocol {
         buttonSearchTicket.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 18).isActive = true
         buttonSearchTicket.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -18).isActive = true
         buttonSearchTicket.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        
+        promotionCollection.topAnchor.constraint(equalTo: buttonSearchTicket.bottomAnchor, constant: 9).isActive = true
+        promotionCollection.leftAnchor.constraint(equalTo: safeAreaLayoutGuide.leftAnchor, constant: 18).isActive = true
+        promotionCollection.rightAnchor.constraint(equalTo: safeAreaLayoutGuide.rightAnchor, constant: -18).isActive = true
     }
     
     func addictionalConfiguration() {
