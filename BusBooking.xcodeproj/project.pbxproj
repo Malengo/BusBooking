@@ -23,6 +23,9 @@
 		CE2CABF628B92E44009C9F2D /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CABF528B92E44009C9F2D /* CityViewModel.swift */; };
 		CE2CABFA28B94979009C9F2D /* TravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CABF928B94979009C9F2D /* TravelView.swift */; };
 		CE34D1F9296C837400209F76 /* SeatsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D1F8296C837400209F76 /* SeatsConstants.swift */; };
+		CE413F4729D5D25800CC99BB /* Promotion.json in Resources */ = {isa = PBXBuildFile; fileRef = CE413F4629D5D25800CC99BB /* Promotion.json */; };
+		CE413F4929D5D28F00CC99BB /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE413F4829D5D28F00CC99BB /* Promotion.swift */; };
+		CE413F4C29D5D68E00CC99BB /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE413F4B29D5D68E00CC99BB /* LocalService.swift */; };
 		CE4BCC5428CA230500C97FF5 /* SeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */; };
 		CE4BCC5628CA2DFF00C97FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */; };
 		CE527FD828B7FA4B002CE548 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE527FD728B7FA4B002CE548 /* Cities.swift */; };
@@ -33,6 +36,7 @@
 		CEBA896B28C7C000002205D7 /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA896A28C7C000002205D7 /* Bus.swift */; };
 		CEBA896F28C7D676002205D7 /* SeatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA896E28C7D675002205D7 /* SeatsView.swift */; };
 		CEBA897328C7DC09002205D7 /* SeatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA897228C7DC09002205D7 /* SeatsCollectionViewController.swift */; };
+		CED8427829D5FA7000022BF5 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8427729D5FA7000022BF5 /* UIImage+Extension.swift */; };
 		CEE381E229D31F3300374F43 /* PromotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,9 @@
 		CE2CABF528B92E44009C9F2D /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		CE2CABF928B94979009C9F2D /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
 		CE34D1F8296C837400209F76 /* SeatsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsConstants.swift; sourceTree = "<group>"; };
+		CE413F4629D5D25800CC99BB /* Promotion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Promotion.json; sourceTree = "<group>"; };
+		CE413F4829D5D28F00CC99BB /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		CE413F4B29D5D68E00CC99BB /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
 		CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE527FD728B7FA4B002CE548 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 		CEBA896A28C7C000002205D7 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		CEBA896E28C7D675002205D7 /* SeatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsView.swift; sourceTree = "<group>"; };
 		CEBA897228C7DC09002205D7 /* SeatsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewController.swift; sourceTree = "<group>"; };
+		CED8427729D5FA7000022BF5 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +130,7 @@
 		CE050D1828AC088900C5DAB0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CE413F4A29D5D67200CC99BB /* Service */,
 				CE527FD628B7F9DB002CE548 /* Model */,
 				CE050D1928AC088E00C5DAB0 /* View */,
 				CE861FFD28C0FD4A009722EE /* ViewModel */,
@@ -146,6 +155,7 @@
 				CE2A052E290C266F00B8D2F8 /* Base */,
 				CE9820CC28D4F3DC00BEFC11 /* Constants */,
 				CE050D1E28AC096400C5DAB0 /* Protocol */,
+				CE413F4629D5D25800CC99BB /* Promotion.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -212,11 +222,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		CE413F4A29D5D67200CC99BB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE413F4B29D5D68E00CC99BB /* LocalService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CE527FD628B7F9DB002CE548 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				CE527FD728B7FA4B002CE548 /* Cities.swift */,
 				CE527FD928B7FA89002CE548 /* City.swift */,
+				CE413F4829D5D28F00CC99BB /* Promotion.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				CE91EE9529B90171001FD09F /* Date+Extension.swift */,
+				CED8427729D5FA7000022BF5 /* UIImage+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -358,6 +378,7 @@
 			files = (
 				CE4BCC5628CA2DFF00C97FF5 /* Assets.xcassets in Resources */,
 				CE050D1028AC054400C5DAB0 /* LaunchScreen.storyboard in Resources */,
+				CE413F4729D5D25800CC99BB /* Promotion.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +391,7 @@
 			files = (
 				CE2AC23D28BD410E00ADEDCE /* ListTravelViewCell.swift in Sources */,
 				CE9820CE28D4F3F800BEFC11 /* Colors.swift in Sources */,
+				CE413F4C29D5D68E00CC99BB /* LocalService.swift in Sources */,
 				CE527FD828B7FA4B002CE548 /* Cities.swift in Sources */,
 				CE2CABF228B9148E009C9F2D /* Travels.swift in Sources */,
 				CE050D0828AC054200C5DAB0 /* HomeViewController.swift in Sources */,
@@ -379,8 +401,10 @@
 				CE171B642959F44500BA92D0 /* TravelConstant.swift in Sources */,
 				CE4BCC5428CA230500C97FF5 /* SeatCollectionViewCell.swift in Sources */,
 				CEBA897328C7DC09002205D7 /* SeatsCollectionViewController.swift in Sources */,
+				CE413F4929D5D28F00CC99BB /* Promotion.swift in Sources */,
 				CEBA896F28C7D676002205D7 /* SeatsView.swift in Sources */,
 				CE34D1F9296C837400209F76 /* SeatsConstants.swift in Sources */,
+				CED8427829D5FA7000022BF5 /* UIImage+Extension.swift in Sources */,
 				CE050D2028AC098F00C5DAB0 /* ViewCodeProtocol.swift in Sources */,
 				CE2CABEF28B9104B009C9F2D /* ListTravelTableViewController.swift in Sources */,
 				CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */,

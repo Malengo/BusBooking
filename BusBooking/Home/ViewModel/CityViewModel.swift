@@ -12,7 +12,8 @@ protocol CityViewModelProtocol {
     func getCityByName(name: String) -> City?
     func numberOfRows() -> Int
     func getCity(at index: Int) -> City
-    
+    func mumberOfPromtions() -> Int
+    func getPromotion(at index: Int) -> Promotion
     var delegate: CityViewModelDelegate? { get set }
 }
 
@@ -24,10 +25,15 @@ protocol CityViewModelDelegate: AnyObject {
 struct CityViewModel: CityViewModelProtocol {
     
     private var cities: [City]
+    var promotion: [Promotion]
+    
+    private var service: PromotionProtocol
     weak var delegate: CityViewModelDelegate?
     
-    init(){
+    init(service: PromotionProtocol){
+        self.service = service
         self.cities = Cities().list
+        self.promotion = service.getPromotions()
     }
     
     func getCityByName(name: String) -> City? {
@@ -51,4 +57,8 @@ struct CityViewModel: CityViewModelProtocol {
             self.delegate?.thereAreNoTravels()
         }
     }
+    
+    func mumberOfPromtions() -> Int { promotion.count }
+    
+    func getPromotion(at index: Int) -> Promotion { promotion[index] }
 }

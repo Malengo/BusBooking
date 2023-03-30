@@ -18,15 +18,22 @@ class PromotionCollectionViewCell: UICollectionViewCell, ViewCodeProtocol {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private(set) var cityImage: UIImage = {
+    private(set) var cityImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        imageView.contentMode = .scaleToFill
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 10
         let image = UIImage(named: "chair")
-        return image!
+        imageView.image = image
+        return imageView
     }()
     
     private(set) var cityName: UILabel = {
         let name = UILabel()
         name.text = "Bragança Paulista"
-        name.font = UIFont.systemFont(ofSize: 20)
+        name.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+        name.textColor = .white
         return name
     }()
     
@@ -34,20 +41,26 @@ class PromotionCollectionViewCell: UICollectionViewCell, ViewCodeProtocol {
         let value = UILabel()
         value.font = UIFont.systemFont(ofSize: 18, weight: .heavy)
         value.text = "R$ 100"
+        value.textColor = .darkText
         return value
     }()
     
     private(set) lazy var stackPromotion: UIStackView = {
         var stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.distribution = .fillProportionally
+        stack.distribution = .fill
         stack.axis = .horizontal
+        stack.alignment = .lastBaseline
+        stack.spacing = 5
+        stack.clipsToBounds = true
+        stack.layer.cornerRadius = 10
+        stack.backgroundColor = Colors.mainColor.withAlphaComponent(0.7)
         return stack
     }()
     
     func buildViewHierachy() {
+        addSubview(cityImage)
         addSubview(stackPromotion)
-        stackPromotion.addArrangedSubview(cityName)
         stackPromotion.addArrangedSubview(cityName)
         stackPromotion.addArrangedSubview(valueText)
     }
@@ -55,6 +68,8 @@ class PromotionCollectionViewCell: UICollectionViewCell, ViewCodeProtocol {
     func setupConstraints() {
         stackPromotion.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor).isActive = true
         stackPromotion.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor).isActive = true
+        stackPromotion.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor).isActive = true
+        stackPromotion.topAnchor.constraint(equalTo: cityImage.bottomAnchor, constant: -30).isActive = true
     }
     
     func addictionalConfiguration() {

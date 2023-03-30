@@ -14,7 +14,7 @@ class HomeViewController: BaseViewController {
         return view
     }()
     
-    var cityViewModel: CityViewModelProtocol = CityViewModel()
+    var cityViewModel: CityViewModelProtocol = CityViewModel(service: LocalService())
     
     // MARK: - LifeCicle
     override func viewDidLoad() {
@@ -128,11 +128,22 @@ extension HomeViewController: CityViewModelDelegate {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        return cityViewModel.mumberOfPromtions()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PromotionCell", for: indexPath) as? PromotionCollectionViewCell else { return UICollectionViewCell()   }
+        
+        let promotion = cityViewModel.getPromotion(at: indexPath.row)
+        
+        if let url = URL(string: promotion.image){
+            let image = UIImage()
+            Task {
+                cell.cityImage.image = try await image.loadImageData(url)
+            }
+            cell.cityName.text = promotion.name
+            cell.valueText.text = "R$ \(promotion.price)"
+        }
         return cell
     }
     

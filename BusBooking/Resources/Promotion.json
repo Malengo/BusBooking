@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Paris",
+        "price": 120,
+        "image": "https://www.planetware.com/photos-large/F/france-paris-eiffel-tower.jpg"
+    },
+    {
+        "name": "Tokyo",
+        "price": 150,
+        "image": "https://img.freepik.com/fotos-gratis/vista-aerea-da-paisagem-urbana-de-toquio-com-a-montanha-fuji-no-japao_335224-148.jpg"
+    },
+    {
+        "name": "New York City",
+        "price": 200,
+        "image": "https://img.freepik.com/fotos-gratis/bela-vista-dos-estados-do-imperio-e-arranha-ceus-em-nova-york_181624-6295.jpg?size=626&ext=jpg&ga=GA1.2.1059926169.1680197429&semt=ais"
+    },
+    {
+        "name": "Sydney",
+        "price": 180,
+        "image": "https://t4.ftcdn.net/jpg/00/95/84/43/240_F_95844332_9XLvoywtmY7IXunhNsLsQJ3jDsD8oMNo.jpg"
+    },
+    {
+        "name": "London",
+        "price": 150,
+        "image": "https://img.freepik.com/fotos-gratis/big-ben-e-westminster-bridge-ao-por-do-sol-londres-reino-unido_268835-1395.jpg?size=626&ext=jpg&ga=GA1.2.1059926169.1680197429&semt=sph"
+    },
+    {
+        "name": "Dubai",
+        "price": 250,
+        "image": "https://img.freepik.com/fotos-gratis/singapura-16-de-julho-de-2015-vista-de-marina-bay-marina-bay-e-uma-das-atracoes-turisticas-mais-famosas-em-cingapura_1203-7089.jpg?size=626&ext=jpg&ga=GA1.1.1059926169.1680197429&semt=sph"
+    },
+    {
+        "name": "Rome",
+        "price": 100,
+        "image": "https://img.freepik.com/fotos-gratis/bela-foto-do-famoso-anfiteatro-romano-coliseu-sob-o-ceu-de-tirar-o-folego-ao-nascer-do-sol_181624-6998.jpg?size=626&ext=jpg&ga=GA1.2.1059926169.1680197429&semt=ais"
+    },
+    {
+        "name": "Barcelona",
+        "price": 90,
+        "image": "https://img.freepik.com/fotos-premium/vista-aerea-de-a-sagrada-familia-um-grande-igreja-catolica-romana-em-barcelona-espanha_73503-828.jpg?size=626&ext=jpg&ga=GA1.2.1059926169.1680197429&semt=ais"
+    },
+    {
+        "name": "Rio de Janeiro",
+        "price": 80,
+        "image": "https://img.freepik.com/fotos-gratis/foto-aerea-do-rio-de-janeiro-cercado-pelo-mar-e-morros-sob-o-sol-no-brasil_181624-11362.jpg?size=626&ext=jpg&ga=GA1.2.1059926169.1680197429&semt=ais"
+    },
+    {
+        "name": "Bangkok",
+        "price": 70,
+        "image": "https://img.freepik.com/fotos-gratis/paisagem-urbana-a-noite-em-bangkok-tailandia_335224-1020.jpg?size=626&ext=jpg&ga=GA1.2.1059926169.1680197429&semt=sph"
+    }
+    ]
