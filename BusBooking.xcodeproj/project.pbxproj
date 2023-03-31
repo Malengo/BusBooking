@@ -38,6 +38,12 @@
 		CEBA897328C7DC09002205D7 /* SeatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBA897228C7DC09002205D7 /* SeatsCollectionViewController.swift */; };
 		CED8427829D5FA7000022BF5 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8427729D5FA7000022BF5 /* UIImage+Extension.swift */; };
 		CEE381E229D31F3300374F43 /* PromotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */; };
+		CEEC6EB129D70EDB00A5E419 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEC6EB029D70EDB00A5E419 /* GoogleService-Info.plist */; };
+		CEEC6EB429D70F9700A5E419 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB329D70F9700A5E419 /* FirebaseAnalytics */; };
+		CEEC6EB629D70F9700A5E419 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB529D70F9700A5E419 /* FirebaseCrashlytics */; };
+		CEEC6EB829D70F9700A5E419 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB729D70F9700A5E419 /* FirebaseRemoteConfig */; };
+		CEEC6EBA29D70F9700A5E419 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB929D70F9700A5E419 /* FirebaseRemoteConfigSwift */; };
+		CEEC6EBC29D7187600A5E419 /* HomeRemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC6EBB29D7187600A5E419 /* HomeRemoteConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,8 @@
 		CEBA897228C7DC09002205D7 /* SeatsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsCollectionViewController.swift; sourceTree = "<group>"; };
 		CED8427729D5FA7000022BF5 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CEEC6EB029D70EDB00A5E419 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEEC6EBB29D7187600A5E419 /* HomeRemoteConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC6EB829D70F9700A5E419 /* FirebaseRemoteConfig in Frameworks */,
+				CEEC6EBA29D70F9700A5E419 /* FirebaseRemoteConfigSwift in Frameworks */,
+				CEEC6EB429D70F9700A5E419 /* FirebaseAnalytics in Frameworks */,
+				CEEC6EB629D70F9700A5E419 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +118,7 @@
 		CE050D0228AC054200C5DAB0 /* BusBooking */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC6EB029D70EDB00A5E419 /* GoogleService-Info.plist */,
 				CE050D1128AC054400C5DAB0 /* Info.plist */,
 				CE050D0E28AC054400C5DAB0 /* LaunchScreen.storyboard */,
 				CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */,
@@ -226,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				CE413F4B29D5D68E00CC99BB /* LocalService.swift */,
+				CEEC6EBB29D7187600A5E419 /* HomeRemoteConfig.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -334,6 +348,12 @@
 			dependencies = (
 			);
 			name = BusBooking;
+			packageProductDependencies = (
+				CEEC6EB329D70F9700A5E419 /* FirebaseAnalytics */,
+				CEEC6EB529D70F9700A5E419 /* FirebaseCrashlytics */,
+				CEEC6EB729D70F9700A5E419 /* FirebaseRemoteConfig */,
+				CEEC6EB929D70F9700A5E419 /* FirebaseRemoteConfigSwift */,
+			);
 			productName = BusBooking;
 			productReference = CE050D0028AC054200C5DAB0 /* BusBooking.app */;
 			productType = "com.apple.product-type.application";
@@ -362,6 +382,9 @@
 				Base,
 			);
 			mainGroup = CE050CF728AC054200C5DAB0;
+			packageReferences = (
+				CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CE050D0128AC054200C5DAB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4BCC5628CA2DFF00C97FF5 /* Assets.xcassets in Resources */,
+				CEEC6EB129D70EDB00A5E419 /* GoogleService-Info.plist in Resources */,
 				CE050D1028AC054400C5DAB0 /* LaunchScreen.storyboard in Resources */,
 				CE413F4729D5D25800CC99BB /* Promotion.json in Resources */,
 			);
@@ -411,6 +435,7 @@
 				CE2CABEC28B8F5BD009C9F2D /* Travel.swift in Sources */,
 				CEBA896B28C7C000002205D7 /* Bus.swift in Sources */,
 				CE2CABF628B92E44009C9F2D /* CityViewModel.swift in Sources */,
+				CEEC6EBC29D7187600A5E419 /* HomeRemoteConfig.swift in Sources */,
 				CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */,
 				CE2CABF428B915B1009C9F2D /* TravelViewModel.swift in Sources */,
 				CE527FDA28B7FA89002CE548 /* City.swift in Sources */,
@@ -634,6 +659,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEC6EB329D70F9700A5E419 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CEEC6EB529D70F9700A5E419 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		CEEC6EB729D70F9700A5E419 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		CEEC6EB929D70F9700A5E419 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE050CF828AC054200C5DAB0 /* Project object */;
 }

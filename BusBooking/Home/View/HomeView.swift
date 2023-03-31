@@ -142,6 +142,7 @@ class HomeView: UIView, ViewCodeProtocol {
     
     func addictionalConfiguration() {
         backgroundColor = .systemBackground
+        promotionCollection.isHidden = true
     }
     
     // MARK: - Public Functions
@@ -173,6 +174,10 @@ class HomeView: UIView, ViewCodeProtocol {
         picker.isHidden = true
         arrivalTextField.resignFirstResponder()
         departureTextField.resignFirstResponder()
+    }
+    
+    func showPromotion(_ isShow: Bool) {
+        promotionCollection.isHidden = !isShow
     }
     
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseRemoteConfig
 
 class HomeViewController: BaseViewController {
 
@@ -26,6 +27,7 @@ class HomeViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         homeView.defaultParameters()
+        showPromotion()
         setupNavigationBar()
     }
     
@@ -50,6 +52,12 @@ class HomeViewController: BaseViewController {
         navigationController?.view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.backButtonDisplayMode = .minimal
+    }
+    
+    private func showPromotion() {
+        Task{
+            self.homeView.showPromotion(await self.cityViewModel.isPromotionValid())
+        }
     }
     
     @objc private func searchTravel() {

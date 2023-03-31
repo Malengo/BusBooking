@@ -14,6 +14,7 @@ protocol CityViewModelProtocol {
     func getCity(at index: Int) -> City
     func mumberOfPromtions() -> Int
     func getPromotion(at index: Int) -> Promotion
+    func isPromotionValid() async -> Bool
     var delegate: CityViewModelDelegate? { get set }
 }
 
@@ -28,6 +29,8 @@ struct CityViewModel: CityViewModelProtocol {
     var promotion: [Promotion]
     
     private var service: PromotionProtocol
+    private var remoteConfig = HomeRemoteConfig()
+    
     weak var delegate: CityViewModelDelegate?
     
     init(service: PromotionProtocol){
@@ -61,4 +64,6 @@ struct CityViewModel: CityViewModelProtocol {
     func mumberOfPromtions() -> Int { promotion.count }
     
     func getPromotion(at index: Int) -> Promotion { promotion[index] }
+    
+    func isPromotionValid() async -> Bool { await remoteConfig.isPromotionValid() }
 }
