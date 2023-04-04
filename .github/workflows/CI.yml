@@ -15,4 +15,4 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
       - name: Build and run tests
-        run: xcodebuild test -scheme -derivedDataPath BusBooking -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2' | xcpretty && exit ${PIPESTATUS[0]}
+        run: xcodebuild test -scheme BusBooking -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=16.2' | xcpretty && exit ${PIPESTATUS[0]}
