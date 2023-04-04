@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import RemoteConfig
 
 protocol CityViewModelProtocol {
     func getTraveModel(_ cityDeparture: City, _ cityDestination: City)
