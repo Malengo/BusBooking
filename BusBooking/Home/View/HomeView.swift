@@ -10,7 +10,7 @@ import UIKit
 class HomeView: UIView, ViewCodeProtocol {
     
     // MARK: - Visual Components
-    private(set) lazy var departureTextField: UITextField = {
+    lazy var departureTextField: UITextField = {
         var text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
         text.placeholder = "De Onde?"
@@ -18,7 +18,7 @@ class HomeView: UIView, ViewCodeProtocol {
         return text
     }()
     
-    private(set) lazy var arrivalTextField: UITextField = {
+    lazy var arrivalTextField: UITextField = {
         var text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
         text.placeholder = "Para Onde?"

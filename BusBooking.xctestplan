@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "F61BED2C-B055-4380-A215-F214E1392E64",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:BusBooking.xcodeproj",
+        "identifier" : "CE52595629DAFC970024FFE5",
+        "name" : "BusBookingTests"
+      }
+    }
+  ],
+  "version" : 1
+}

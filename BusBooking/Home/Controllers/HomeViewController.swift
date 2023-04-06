@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseRemoteConfig
 
 class HomeViewController: BaseViewController {
 
@@ -115,6 +114,7 @@ extension HomeViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         } else {
             homeView.arrivalTextField.text = city.name
         }
+        self.view.endEditing(true)
     }
 }
 

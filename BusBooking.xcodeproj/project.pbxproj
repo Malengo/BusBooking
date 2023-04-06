@@ -22,13 +22,16 @@
 		CE2CABF428B915B1009C9F2D /* TravelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CABF328B915B1009C9F2D /* TravelViewModel.swift */; };
 		CE2CABF628B92E44009C9F2D /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CABF528B92E44009C9F2D /* CityViewModel.swift */; };
 		CE2CABFA28B94979009C9F2D /* TravelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CABF928B94979009C9F2D /* TravelView.swift */; };
+		CE2CD74B29DEFB6E00B8746C /* UITextFieldSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CD74A29DEFB6E00B8746C /* UITextFieldSpy.swift */; };
+		CE2CD74D29DEFF7000B8746C /* CityViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2CD74C29DEFF7000B8746C /* CityViewModelMock.swift */; };
 		CE34D1F9296C837400209F76 /* SeatsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34D1F8296C837400209F76 /* SeatsConstants.swift */; };
 		CE413F4729D5D25800CC99BB /* Promotion.json in Resources */ = {isa = PBXBuildFile; fileRef = CE413F4629D5D25800CC99BB /* Promotion.json */; };
 		CE413F4929D5D28F00CC99BB /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE413F4829D5D28F00CC99BB /* Promotion.swift */; };
 		CE413F4C29D5D68E00CC99BB /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE413F4B29D5D68E00CC99BB /* LocalService.swift */; };
+		CE4AB55329DDEECB0001AE0D /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AB55229DDEECB0001AE0D /* HomeViewControllerTests.swift */; };
+		CE4AB55529DDF2E20001AE0D /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */; };
 		CE4BCC5428CA230500C97FF5 /* SeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */; };
 		CE4BCC5628CA2DFF00C97FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */; };
-		CE52595A29DAFC970024FFE5 /* BusBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE52595929DAFC970024FFE5 /* BusBookingTests.swift */; };
 		CE527FD828B7FA4B002CE548 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE527FD728B7FA4B002CE548 /* Cities.swift */; };
 		CE527FDA28B7FA89002CE548 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE527FD928B7FA89002CE548 /* City.swift */; };
 		CE68DE0829DB518800EA35A9 /* RemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CE68DE0729DB518800EA35A9 /* RemoteConfig */; };
@@ -75,14 +78,17 @@
 		CE2CABF328B915B1009C9F2D /* TravelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewModel.swift; sourceTree = "<group>"; };
 		CE2CABF528B92E44009C9F2D /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		CE2CABF928B94979009C9F2D /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
+		CE2CD74929DEF49A00B8746C /* BusBooking.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusBooking.xctestplan; sourceTree = "<group>"; };
+		CE2CD74A29DEFB6E00B8746C /* UITextFieldSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldSpy.swift; sourceTree = "<group>"; };
+		CE2CD74C29DEFF7000B8746C /* CityViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModelMock.swift; sourceTree = "<group>"; };
 		CE34D1F8296C837400209F76 /* SeatsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsConstants.swift; sourceTree = "<group>"; };
 		CE413F4629D5D25800CC99BB /* Promotion.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Promotion.json; sourceTree = "<group>"; };
 		CE413F4829D5D28F00CC99BB /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
 		CE413F4B29D5D68E00CC99BB /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		CE4AB55229DDEECB0001AE0D /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE52595929DAFC970024FFE5 /* BusBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusBookingTests.swift; sourceTree = "<group>"; };
 		CE52596129DB4C680024FFE5 /* RemoteConfig */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RemoteConfig; path = ../RemoteConfig; sourceTree = "<group>"; };
 		CE527FD728B7FA4B002CE548 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		CE527FD928B7FA89002CE548 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4AB55529DDF2E20001AE0D /* FirebaseRemoteConfig in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +130,7 @@
 		CE050CF728AC054200C5DAB0 = {
 			isa = PBXGroup;
 			children = (
+				CE2CD74929DEF49A00B8746C /* BusBooking.xctestplan */,
 				CE52596129DB4C680024FFE5 /* RemoteConfig */,
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
@@ -268,10 +276,20 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		CE4AB54F29DDEE850001AE0D /* HomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AB55229DDEECB0001AE0D /* HomeViewControllerTests.swift */,
+				CE2CD74A29DEFB6E00B8746C /* UITextFieldSpy.swift */,
+				CE2CD74C29DEFF7000B8746C /* CityViewModelMock.swift */,
+			);
+			path = HomeTests;
+			sourceTree = "<group>";
+		};
 		CE52595829DAFC970024FFE5 /* BusBookingTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE52595929DAFC970024FFE5 /* BusBookingTests.swift */,
+				CE4AB54F29DDEE850001AE0D /* HomeTests */,
 			);
 			path = BusBookingTests;
 			sourceTree = "<group>";
@@ -412,6 +430,9 @@
 				CE52595C29DAFC970024FFE5 /* PBXTargetDependency */,
 			);
 			name = BusBookingTests;
+			packageProductDependencies = (
+				CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */,
+			);
 			productName = BusBookingTests;
 			productReference = CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -431,6 +452,7 @@
 					};
 					CE52595629DAFC970024FFE5 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1430;
 						TestTargetID = CE050CFF28AC054200C5DAB0;
 					};
 				};
@@ -518,7 +540,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE52595A29DAFC970024FFE5 /* BusBookingTests.swift in Sources */,
+				CE2CD74B29DEFB6E00B8746C /* UITextFieldSpy.swift in Sources */,
+				CE2CD74D29DEFF7000B8746C /* CityViewModelMock.swift in Sources */,
+				CE4AB55329DDEECB0001AE0D /* HomeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +751,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2HX6PAF8Z8;
@@ -735,7 +760,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.malengo.BusBookingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BusBooking";
@@ -747,6 +776,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2HX6PAF8Z8;
@@ -755,6 +785,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.malengo.BusBookingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -806,6 +839,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
 		CE68DE0729DB518800EA35A9 /* RemoteConfig */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RemoteConfig;

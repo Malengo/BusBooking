@@ -27,7 +27,7 @@ protocol CityViewModelDelegate: AnyObject {
 struct CityViewModel: CityViewModelProtocol {
     
     private var cities: [City]
-    var promotion: [Promotion]
+    private var promotion: [Promotion]
     
     private var service: PromotionProtocol
     private var remoteConfig = HomeRemoteConfig()
