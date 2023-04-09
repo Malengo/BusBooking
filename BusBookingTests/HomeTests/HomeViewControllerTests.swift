@@ -82,6 +82,7 @@ final class HomeViewControllerTests: XCTestCase {
         }
         //When
         sut.viewWillAppear(true)
+      
         waitForExpectations(timeout: 2)
         //Then
         XCTAssertTrue(cityViewModelMock.wasPromotionValidCalled)

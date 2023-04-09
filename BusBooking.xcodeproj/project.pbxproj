@@ -403,6 +403,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CE2CD74F29E2EA8D00B8746C /* PBXTargetDependency */,
 			);
 			name = BusBooking;
 			packageProductDependencies = (
@@ -549,6 +550,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE2CD74F29E2EA8D00B8746C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = CE2CD74E29E2EA8D00B8746C /* RemoteConfig */;
+		};
 		CE52595C29DAFC970024FFE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE050CFF28AC054200C5DAB0 /* BusBooking */;
@@ -839,6 +844,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE2CD74E29E2EA8D00B8746C /* RemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RemoteConfig;
+		};
 		CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
