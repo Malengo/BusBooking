@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -89,7 +89,6 @@
 		CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE52596129DB4C680024FFE5 /* RemoteConfig */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = RemoteConfig; path = ../RemoteConfig; sourceTree = "<group>"; };
 		CE527FD728B7FA4B002CE548 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		CE527FD928B7FA89002CE548 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		CE91EE9529B90171001FD09F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -131,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				CE2CD74929DEF49A00B8746C /* BusBooking.xctestplan */,
-				CE52596129DB4C680024FFE5 /* RemoteConfig */,
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
 				CE050D0128AC054200C5DAB0 /* Products */,
@@ -444,7 +442,6 @@
 		CE050CF828AC054200C5DAB0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
@@ -459,7 +456,7 @@
 				};
 			};
 			buildConfigurationList = CE050CFB28AC054200C5DAB0 /* Build configuration list for PBXProject "BusBooking" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
