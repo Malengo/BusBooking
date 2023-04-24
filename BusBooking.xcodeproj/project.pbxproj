@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55C3312329F310D800346638 /* Package in Frameworks */ = {isa = PBXBuildFile; productRef = 55C3312229F310D800346638 /* Package */; };
+		553D34FB29F6D37A00A6D051 /* Package in Frameworks */ = {isa = PBXBuildFile; productRef = 553D34FA29F6D37A00A6D051 /* Package */; };
 		CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0328AC054200C5DAB0 /* AppDelegate.swift */; };
 		CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */; };
 		CE050D0828AC054200C5DAB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0728AC054200C5DAB0 /* HomeViewController.swift */; };
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55A51FD029F1D83D0022AC95 /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Package; path = ../../Desktop/Package; sourceTree = "<group>"; };
+		553D34F929F6D28C00A6D051 /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Package; sourceTree = "<group>"; };
 		CE050D0028AC054200C5DAB0 /* BusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE050D0328AC054200C5DAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C3312329F310D800346638 /* Package in Frameworks */,
+				553D34FB29F6D37A00A6D051 /* Package in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +121,7 @@
 		5574A0C329F2C62700E6FD51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				553D34F929F6D28C00A6D051 /* Package */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,7 +129,6 @@
 		CE050CF728AC054200C5DAB0 = {
 			isa = PBXGroup;
 			children = (
-				55A51FD029F1D83D0022AC95 /* Package */,
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
 				CE050D0128AC054200C5DAB0 /* Products */,
@@ -393,11 +393,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				CE2CD74F29E2EA8D00B8746C /* PBXTargetDependency */,
 			);
 			name = BusBooking;
 			packageProductDependencies = (
-				55C3312229F310D800346638 /* Package */,
+				553D34FA29F6D37A00A6D051 /* Package */,
 			);
 			productName = BusBooking;
 			productReference = CE050D0028AC054200C5DAB0 /* BusBooking.app */;
@@ -533,9 +532,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE2CD74F29E2EA8D00B8746C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-		};
 		CE52595C29DAFC970024FFE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE050CFF28AC054200C5DAB0 /* BusBooking */;
@@ -815,7 +811,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		55C3312229F310D800346638 /* Package */ = {
+		553D34FA29F6D37A00A6D051 /* Package */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Package;
 		};
