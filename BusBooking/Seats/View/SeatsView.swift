@@ -85,12 +85,12 @@ class SeatsView: UIView, ViewCodeProtocol {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.imageView?.contentMode = .scaleAspectFit
-        button.configuration = UIButton.Configuration.filled()
+      /*  button.configuration = UIButton.Configuration.filled()
         button.configuration?.image = UIImage(systemName: "arrowtriangle.backward.fill")
         button.configuration?.image?.withTintColor(.white)
         button.configuration?.baseBackgroundColor = Colors.mainColor
         button.configuration?.buttonSize = .large
-        button.configuration?.imagePadding = 1
+        button.configuration?.imagePadding = 1*/
         return button
     }()
     

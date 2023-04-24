@@ -18,7 +18,7 @@ protocol HomeRemoteConfigProtocol {
     var settings: RemoteConfigSettings { get set }
 }
 
-struct HomeRemoteConfig: HomeRemoteConfigProtocol {
+public class HomeRemoteConfig: HomeRemoteConfigProtocol {
     
     var remoteConfig: RemoteConfig = RemoteConfig.remoteConfig()
     var settings: RemoteConfigSettings = RemoteConfigSettings()
@@ -26,7 +26,7 @@ struct HomeRemoteConfig: HomeRemoteConfigProtocol {
         setupRemoteConfig()
         //setupDefaultValues()
     }
-    mutating func setupRemoteConfig() {
+    func setupRemoteConfig() {
         settings.minimumFetchInterval = 0
         remoteConfig.configSettings = settings
     }

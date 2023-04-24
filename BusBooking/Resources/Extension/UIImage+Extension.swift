@@ -8,18 +8,17 @@
 import UIKit
 extension UIImage {
     func loadImageData(_ url: URL) async throws -> UIImage {
-        var image: UIImage
+        var image: UIImage = UIImage()
+        
         do {
             let request = URLRequest(url: url)
-            let (data, response) = try await URLSession.shared.data(for: request)
-            guard let httpResponse = response as? HTTPURLResponse else { throw NSError.init(domain: "Error", code: 1)}
-            guard httpResponse.statusCode == 200  else { throw NSError.init(domain: "Error", code: 2)}
-            
-            image = UIImage(data: data)!
+            URLSession.shared.dataTask(with: request) { data, response, erro in
+                guard let httpResponse = response as? HTTPURLResponse else { return }
+                guard httpResponse.statusCode == 200  else { return }
+                
+                image = UIImage(data: data!)!
+            }.resume()
             return image
-        } catch {
-            return UIImage()
-        }
-        
+        }         
     }
 }

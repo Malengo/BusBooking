@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55C3312329F310D800346638 /* Package in Frameworks */ = {isa = PBXBuildFile; productRef = 55C3312229F310D800346638 /* Package */; };
 		CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0328AC054200C5DAB0 /* AppDelegate.swift */; };
 		CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */; };
 		CE050D0828AC054200C5DAB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0728AC054200C5DAB0 /* HomeViewController.swift */; };
@@ -29,12 +30,11 @@
 		CE413F4929D5D28F00CC99BB /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE413F4829D5D28F00CC99BB /* Promotion.swift */; };
 		CE413F4C29D5D68E00CC99BB /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE413F4B29D5D68E00CC99BB /* LocalService.swift */; };
 		CE4AB55329DDEECB0001AE0D /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AB55229DDEECB0001AE0D /* HomeViewControllerTests.swift */; };
-		CE4AB55529DDF2E20001AE0D /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */; };
+		CE4AB55529DDF2E20001AE0D /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		CE4BCC5428CA230500C97FF5 /* SeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */; };
 		CE4BCC5628CA2DFF00C97FF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */; };
 		CE527FD828B7FA4B002CE548 /* Cities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE527FD728B7FA4B002CE548 /* Cities.swift */; };
 		CE527FDA28B7FA89002CE548 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE527FD928B7FA89002CE548 /* City.swift */; };
-		CE68DE0829DB518800EA35A9 /* RemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CE68DE0729DB518800EA35A9 /* RemoteConfig */; };
 		CE91EE9629B90171001FD09F /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91EE9529B90171001FD09F /* Date+Extension.swift */; };
 		CE9820CE28D4F3F800BEFC11 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9820CD28D4F3F800BEFC11 /* Colors.swift */; };
 		CEB82E4F28D0B4E2008DB2D8 /* SeatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB82E4E28D0B4E2008DB2D8 /* SeatsViewModel.swift */; };
@@ -44,10 +44,6 @@
 		CED8427829D5FA7000022BF5 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8427729D5FA7000022BF5 /* UIImage+Extension.swift */; };
 		CEE381E229D31F3300374F43 /* PromotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE381E129D31F3300374F43 /* PromotionCollectionViewCell.swift */; };
 		CEEC6EB129D70EDB00A5E419 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEEC6EB029D70EDB00A5E419 /* GoogleService-Info.plist */; };
-		CEEC6EB429D70F9700A5E419 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB329D70F9700A5E419 /* FirebaseAnalytics */; };
-		CEEC6EB629D70F9700A5E419 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB529D70F9700A5E419 /* FirebaseCrashlytics */; };
-		CEEC6EB829D70F9700A5E419 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB729D70F9700A5E419 /* FirebaseRemoteConfig */; };
-		CEEC6EBA29D70F9700A5E419 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC6EB929D70F9700A5E419 /* FirebaseRemoteConfigSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55A51FD029F1D83D0022AC95 /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Package; path = ../../Desktop/Package; sourceTree = "<group>"; };
 		CE050D0028AC054200C5DAB0 /* BusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE050D0328AC054200C5DAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +75,6 @@
 		CE2CABF328B915B1009C9F2D /* TravelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelViewModel.swift; sourceTree = "<group>"; };
 		CE2CABF528B92E44009C9F2D /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
 		CE2CABF928B94979009C9F2D /* TravelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelView.swift; sourceTree = "<group>"; };
-		CE2CD74929DEF49A00B8746C /* BusBooking.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BusBooking.xctestplan; sourceTree = "<group>"; };
 		CE2CD74A29DEFB6E00B8746C /* UITextFieldSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldSpy.swift; sourceTree = "<group>"; };
 		CE2CD74C29DEFF7000B8746C /* CityViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModelMock.swift; sourceTree = "<group>"; };
 		CE34D1F8296C837400209F76 /* SeatsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatsConstants.swift; sourceTree = "<group>"; };
@@ -107,11 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEEC6EB829D70F9700A5E419 /* FirebaseRemoteConfig in Frameworks */,
-				CEEC6EBA29D70F9700A5E419 /* FirebaseRemoteConfigSwift in Frameworks */,
-				CEEC6EB429D70F9700A5E419 /* FirebaseAnalytics in Frameworks */,
-				CEEC6EB629D70F9700A5E419 /* FirebaseCrashlytics in Frameworks */,
-				CE68DE0829DB518800EA35A9 /* RemoteConfig in Frameworks */,
+				55C3312329F310D800346638 /* Package in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,21 +111,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4AB55529DDF2E20001AE0D /* FirebaseRemoteConfig in Frameworks */,
+				CE4AB55529DDF2E20001AE0D /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5574A0C329F2C62700E6FD51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE050CF728AC054200C5DAB0 = {
 			isa = PBXGroup;
 			children = (
-				CE2CD74929DEF49A00B8746C /* BusBooking.xctestplan */,
+				55A51FD029F1D83D0022AC95 /* Package */,
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
 				CE050D0128AC054200C5DAB0 /* Products */,
-				CE68DE0629DB518800EA35A9 /* Frameworks */,
+				5574A0C329F2C62700E6FD51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,13 +301,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CE68DE0629DB518800EA35A9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CE861FFD28C0FD4A009722EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,11 +397,7 @@
 			);
 			name = BusBooking;
 			packageProductDependencies = (
-				CEEC6EB329D70F9700A5E419 /* FirebaseAnalytics */,
-				CEEC6EB529D70F9700A5E419 /* FirebaseCrashlytics */,
-				CEEC6EB729D70F9700A5E419 /* FirebaseRemoteConfig */,
-				CEEC6EB929D70F9700A5E419 /* FirebaseRemoteConfigSwift */,
-				CE68DE0729DB518800EA35A9 /* RemoteConfig */,
+				55C3312229F310D800346638 /* Package */,
 			);
 			productName = BusBooking;
 			productReference = CE050D0028AC054200C5DAB0 /* BusBooking.app */;
@@ -430,7 +418,6 @@
 			);
 			name = BusBookingTests;
 			packageProductDependencies = (
-				CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */,
 			);
 			productName = BusBookingTests;
 			productReference = CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */;
@@ -465,7 +452,6 @@
 			);
 			mainGroup = CE050CF728AC054200C5DAB0;
 			packageReferences = (
-				CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = CE050D0128AC054200C5DAB0 /* Products */;
 			projectDirPath = "";
@@ -549,7 +535,6 @@
 /* Begin PBXTargetDependency section */
 		CE2CD74F29E2EA8D00B8746C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			productRef = CE2CD74E29E2EA8D00B8746C /* RemoteConfig */;
 		};
 		CE52595C29DAFC970024FFE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -699,7 +684,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -731,7 +716,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,50 +814,10 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		CE2CD74E29E2EA8D00B8746C /* RemoteConfig */ = {
+		55C3312229F310D800346638 /* Package */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = RemoteConfig;
-		};
-		CE4AB55429DDF2E20001AE0D /* FirebaseRemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfig;
-		};
-		CE68DE0729DB518800EA35A9 /* RemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RemoteConfig;
-		};
-		CEEC6EB329D70F9700A5E419 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		CEEC6EB529D70F9700A5E419 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		CEEC6EB729D70F9700A5E419 /* FirebaseRemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfig;
-		};
-		CEEC6EB929D70F9700A5E419 /* FirebaseRemoteConfigSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CEEC6EB229D70F9700A5E419 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfigSwift;
+			productName = Package;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
