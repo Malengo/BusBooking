@@ -76,4 +76,15 @@ class PromotionCollectionViewCell: UICollectionViewCell, ViewCodeProtocol {
         
     }
     
+    func configurePromotionCell(with promotion: Promotion) {
+        if let url = URL(string: promotion.image){
+            let image = UIImage()
+            Task {
+                self.cityImage.image = try await image.loadImageData(url)
+            }
+            self.cityName.text = promotion.name
+            self.valueText.text = "R$ \(promotion.price)"
+        }
+    }
+    
 }

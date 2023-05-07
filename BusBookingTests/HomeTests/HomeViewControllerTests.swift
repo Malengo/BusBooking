@@ -75,7 +75,7 @@ final class HomeViewControllerTests: XCTestCase {
     func testViewWillAppearMustCalledIsPromotionValid() {
         //Given
         let expectation = expectation(description: "wait for request")
-        var cityViewModelMock = CityViewModelMock()
+        let cityViewModelMock = CityViewModelMock()
         sut.cityViewModel = cityViewModelMock
         cityViewModelMock.promotionValidCompletionHandler = {
             expectation.fulfill()
@@ -87,6 +87,17 @@ final class HomeViewControllerTests: XCTestCase {
         //Then
         XCTAssertTrue(cityViewModelMock.wasPromotionValidCalled)
         XCTAssertTrue(sut.homeView.picker.isHidden)
+    }
+    
+    func testViewWillAppearMustCalledSetupNavigationBar() {
+        //given
+        let navigation = sut.navigationController!
+        //when
+        sut.viewWillAppear(true)
+        
+        //then
+        XCTAssertEqual(navigation.view.backgroundColor, .systemBackground)
+        XCTAssertTrue(navigation.navigationBar.prefersLargeTitles)
     }
 
 }

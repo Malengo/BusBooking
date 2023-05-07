@@ -14,7 +14,9 @@ class HomeViewController: BaseViewController {
         return view
     }()
     
-    var cityViewModel: CityViewModelProtocol = CityViewModel(service: LocalService())
+    private var cityViewModel: CityViewModelProtocol = CityViewModel()
+    private var promotionViewModel: PromotionViewModelProtocol = PromotionViewModel(service: LocalService())
+    
     
     // MARK: - LifeCicle
     override func viewDidLoad() {
@@ -55,7 +57,7 @@ class HomeViewController: BaseViewController {
     
     private func showPromotion() {
         Task{
-            self.homeView.showPromotion(await self.cityViewModel.isPromotionValid())
+            self.homeView.showPromotion(await self.promotionViewModel.isPromotionValid())
         }
     }
     
@@ -136,22 +138,15 @@ extension HomeViewController: CityViewModelDelegate {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cityViewModel.mumberOfPromtions()
+        return promotionViewModel.mumberOfPromtions()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PromotionCell", for: indexPath) as? PromotionCollectionViewCell else { return UICollectionViewCell()   }
         
-        let promotion = cityViewModel.getPromotion(at: indexPath.row)
+        let promotion = promotionViewModel.getPromotion(at: indexPath.row)
+        cell.configurePromotionCell(with: promotion)
         
-        if let url = URL(string: promotion.image){
-            let image = UIImage()
-            Task {
-                cell.cityImage.image = try await image.loadImageData(url)
-            }
-            cell.cityName.text = promotion.name
-            cell.valueText.text = "R$ \(promotion.price)"
-        }
         return cell
     }
     

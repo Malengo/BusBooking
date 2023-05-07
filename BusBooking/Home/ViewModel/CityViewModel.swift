@@ -13,9 +13,6 @@ protocol CityViewModelProtocol {
     func getCityByName(name: String) -> City?
     func numberOfRows() -> Int
     func getCity(at index: Int) -> City
-    func mumberOfPromtions() -> Int
-    func getPromotion(at index: Int) -> Promotion
-    func isPromotionValid() async -> Bool
     var delegate: CityViewModelDelegate? { get set }
 }
 
@@ -26,18 +23,11 @@ protocol CityViewModelDelegate: AnyObject {
 
 struct CityViewModel: CityViewModelProtocol {
     
-    private var cities: [City]
-    private var promotion: [Promotion]
-    
-    private var service: PromotionProtocol
-    private var remoteConfig = HomeRemoteConfig()
-    
+    private var cities: [City]    
     weak var delegate: CityViewModelDelegate?
     
-    init(service: PromotionProtocol){
-        self.service = service
+    init(){
         self.cities = Cities().list
-        self.promotion = service.getPromotions()
     }
     
     func getCityByName(name: String) -> City? {
@@ -62,9 +52,4 @@ struct CityViewModel: CityViewModelProtocol {
         }
     }
     
-    func mumberOfPromtions() -> Int { promotion.count }
-    
-    func getPromotion(at index: Int) -> Promotion { promotion[index] }
-    
-    func isPromotionValid() async -> Bool { await remoteConfig.isPromotionValid() }
 }

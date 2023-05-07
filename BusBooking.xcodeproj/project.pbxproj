@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		553D351629F6E1DF00A6D051 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 553D351529F6E1DF00A6D051 /* Modules */; };
+		55E9A2DF2A086613001ECF08 /* PromotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9A2DE2A086613001ECF08 /* PromotionViewModel.swift */; };
 		CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0328AC054200C5DAB0 /* AppDelegate.swift */; };
 		CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */; };
 		CE050D0828AC054200C5DAB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0728AC054200C5DAB0 /* HomeViewController.swift */; };
@@ -57,8 +58,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550FD8F42A005DDF00D8D5B2 /* BusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		550FD8F52A005DDF00D8D5B2 /* BusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553D351329F6E0D500A6D051 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
-		CE050D0028AC054200C5DAB0 /* BusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55E9A2DE2A086613001ECF08 /* PromotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewModel.swift; sourceTree = "<group>"; };
 		CE050D0328AC054200C5DAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE050D0728AC054200C5DAB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +87,6 @@
 		CE4AB55229DDEECB0001AE0D /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		CE4BCC5328CA230500C97FF5 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE527FD728B7FA4B002CE548 /* Cities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cities.swift; sourceTree = "<group>"; };
 		CE527FD928B7FA89002CE548 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		CE91EE9529B90171001FD09F /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -118,31 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		553D351429F6E1DF00A6D051 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CE050CF728AC054200C5DAB0 = {
 			isa = PBXGroup;
 			children = (
 				553D351329F6E0D500A6D051 /* Modules */,
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
-				CE050D0128AC054200C5DAB0 /* Products */,
-				553D351429F6E1DF00A6D051 /* Frameworks */,
+				550FD8F42A005DDF00D8D5B2 /* BusBooking.app */,
+				550FD8F52A005DDF00D8D5B2 /* BusBookingTests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		CE050D0128AC054200C5DAB0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CE050D0028AC054200C5DAB0 /* BusBooking.app */,
-				CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CE050D0228AC054200C5DAB0 /* BusBooking */ = {
@@ -305,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2CABF528B92E44009C9F2D /* CityViewModel.swift */,
+				55E9A2DE2A086613001ECF08 /* PromotionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -399,7 +386,7 @@
 				553D351529F6E1DF00A6D051 /* Modules */,
 			);
 			productName = BusBooking;
-			productReference = CE050D0028AC054200C5DAB0 /* BusBooking.app */;
+			productReference = 550FD8F42A005DDF00D8D5B2 /* BusBooking.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CE52595629DAFC970024FFE5 /* BusBookingTests */ = {
@@ -419,7 +406,7 @@
 			packageProductDependencies = (
 			);
 			productName = BusBookingTests;
-			productReference = CE52595729DAFC970024FFE5 /* BusBookingTests.xctest */;
+			productReference = 550FD8F52A005DDF00D8D5B2 /* BusBookingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -452,7 +439,7 @@
 			mainGroup = CE050CF728AC054200C5DAB0;
 			packageReferences = (
 			);
-			productRefGroup = CE050D0128AC054200C5DAB0 /* Products */;
+			productRefGroup = CE050CF728AC054200C5DAB0;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -508,6 +495,7 @@
 				CE2CABEF28B9104B009C9F2D /* ListTravelTableViewController.swift in Sources */,
 				CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */,
 				CE2CABEC28B8F5BD009C9F2D /* Travel.swift in Sources */,
+				55E9A2DF2A086613001ECF08 /* PromotionViewModel.swift in Sources */,
 				CEBA896B28C7C000002205D7 /* Bus.swift in Sources */,
 				CE2CABF628B92E44009C9F2D /* CityViewModel.swift in Sources */,
 				CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */,
@@ -739,7 +727,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2HX6PAF8Z8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.malengo.BusBookingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -750,7 +738,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BusBooking";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusBooking.app/BusBooking";
 			};
 			name = Debug;
 		};
@@ -764,7 +752,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2HX6PAF8Z8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.malengo.BusBookingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -774,7 +762,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusBooking.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BusBooking";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BusBooking.app/BusBooking";
 			};
 			name = Release;
 		};
