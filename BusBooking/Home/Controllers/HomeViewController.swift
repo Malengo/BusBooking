@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import RemoteConfig
 
 class HomeViewController: BaseViewController {
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		553D34FB29F6D37A00A6D051 /* Package in Frameworks */ = {isa = PBXBuildFile; productRef = 553D34FA29F6D37A00A6D051 /* Package */; };
+		553D351629F6E1DF00A6D051 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 553D351529F6E1DF00A6D051 /* Modules */; };
 		CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0328AC054200C5DAB0 /* AppDelegate.swift */; };
 		CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */; };
 		CE050D0828AC054200C5DAB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0728AC054200C5DAB0 /* HomeViewController.swift */; };
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		553D34F929F6D28C00A6D051 /* Package */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Package; sourceTree = "<group>"; };
+		553D351329F6E0D500A6D051 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
 		CE050D0028AC054200C5DAB0 /* BusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE050D0328AC054200C5DAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553D34FB29F6D37A00A6D051 /* Package in Frameworks */,
+				553D351629F6E1DF00A6D051 /* Modules in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +118,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5574A0C329F2C62700E6FD51 /* Frameworks */ = {
+		553D351429F6E1DF00A6D051 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				553D34F929F6D28C00A6D051 /* Package */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,10 +128,11 @@
 		CE050CF728AC054200C5DAB0 = {
 			isa = PBXGroup;
 			children = (
+				553D351329F6E0D500A6D051 /* Modules */,
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
 				CE050D0128AC054200C5DAB0 /* Products */,
-				5574A0C329F2C62700E6FD51 /* Frameworks */,
+				553D351429F6E1DF00A6D051 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -396,7 +396,7 @@
 			);
 			name = BusBooking;
 			packageProductDependencies = (
-				553D34FA29F6D37A00A6D051 /* Package */,
+				553D351529F6E1DF00A6D051 /* Modules */,
 			);
 			productName = BusBooking;
 			productReference = CE050D0028AC054200C5DAB0 /* BusBooking.app */;
@@ -811,9 +811,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		553D34FA29F6D37A00A6D051 /* Package */ = {
+		553D351529F6E1DF00A6D051 /* Modules */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = Package;
+			productName = Modules;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
