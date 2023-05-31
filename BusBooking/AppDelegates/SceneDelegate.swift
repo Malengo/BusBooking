@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func setupNavigationController() -> UINavigationController {
-        let navigation = UINavigationController(rootViewController: HomeViewController())
+        let navigation = UINavigationController(rootViewController: LoginViewController())
         navigation.navigationBar.standardAppearance = setupAppearenceBar()
         navigation.navigationBar.isTranslucent = false
         navigation.navigationBar.tintColor = .white
