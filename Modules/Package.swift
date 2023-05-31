@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Modules",
-            targets: ["RemoteConfig"]),
+            targets: ["RemoteConfig", "Authentication"]),
     ],
     dependencies: [
         .package(name: "Firebase",
@@ -23,8 +23,16 @@ let package = Package(
         .target(
             name: "RemoteConfig", 
             dependencies: [.product(name: "FirebaseRemoteConfig", package: "Firebase")]),
+
         .testTarget(
             name: "RemoteConfigTests",
             dependencies: ["RemoteConfig"]),
+        
+        .target(
+            name: "Authentication",
+            dependencies: [.product(name: "FirebaseAuth", package: "Firebase")]),
+        
+        .testTarget(name: "AuthenticationTests",
+                    dependencies: ["Authentication"])
     ]
 )
