@@ -9,23 +9,11 @@ import UIKit
 
 class LoginView: UIView, ViewCodeProtocol {
     
-    private lazy var emailTextField: UITextField = {
-        let textField = UITextField()
-        textField.layer.borderWidth = 0.5
-        textField.placeholder = "Email"
-        return textField
-    }()
+    private(set) lazy var emailTextField = BaseTextField(placeholder: "Email", image: "person.crop.circle")
     
-    private lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "Senha"
-        textField.leftViewMode = .always
-        textField.leftView?.frame = CGRect(x: 0, y: 5, width: 10, height: 10)
-        textField.leftView = UIImageView(image: UIImage(named: "email"))
-        return textField
-    }()
+    private(set) lazy var passwordTextField = BaseTextField(placeholder: "Senha", image: "lock")
     
-    private lazy var loginButton: UIButton = {
+    private(set) lazy var loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
         button.clipsToBounds = true
@@ -38,7 +26,7 @@ class LoginView: UIView, ViewCodeProtocol {
         let stack = UIStackView()
         stack.alignment = .fill
         stack.distribution = .fillEqually
-        stack.spacing = 9
+        stack.spacing = 20
         stack.axis = .vertical
         stack.translatesAutoresizingMaskIntoConstraints = false
         return stack

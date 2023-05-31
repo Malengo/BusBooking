@@ -52,7 +52,8 @@ class HomeViewController: BaseViewController {
     private func setupNavigationBar() {
         navigationController?.view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.backButtonDisplayMode = .minimal
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationItem.setHidesBackButton(true, animated: true)
     }
     
     private func showPromotion() {
