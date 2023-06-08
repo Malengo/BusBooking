@@ -6,11 +6,11 @@
 //
 
 import UIKit
+import Authentication
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     private func setupNavigationController() -> UINavigationController {
-        let navigation = UINavigationController(rootViewController: LoginViewController())
+        let navigation = UINavigationController(rootViewController: AuthenticationUser().isUserLogged ? HomeViewController() : LoginViewController())
         navigation.navigationBar.standardAppearance = setupAppearenceBar()
         navigation.navigationBar.isTranslucent = false
         navigation.navigationBar.tintColor = .white

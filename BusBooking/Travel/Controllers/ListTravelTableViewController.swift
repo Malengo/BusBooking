@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListTravelTableViewController: UITableViewController {
+class ListTravelTableViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     lazy var travelView: TravelView = {
         let view = TravelView()
@@ -42,25 +42,25 @@ class ListTravelTableViewController: UITableViewController {
    
     // MARK: - TableView data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return travelViewModel?.travels.count ?? 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0.5
     }
     
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.backgroundColor = UIColor.clear
         return headerView
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TravelConstant.cellIdentifier, for: indexPath) as? ListTravelViewCell
         travelViewModel?.selectTravel(at: indexPath.row) { travel in
             cell?.configureCellWith(travel)
@@ -68,7 +68,7 @@ class ListTravelTableViewController: UITableViewController {
         return cell ?? UITableViewCell()
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = SeatsCollectionViewController()
         travelViewModel?.selectTravel(at: indexPath.section) { travel in
             vc.seatsViewModel = SeatsViewModel(travel: travel)
