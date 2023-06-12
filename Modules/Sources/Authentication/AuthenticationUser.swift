@@ -8,6 +8,8 @@
 import Foundation
 import FirebaseCore
 import FirebaseAuth
+import UIKit
+
 
 public class AuthenticationUser {
     
@@ -29,6 +31,24 @@ public class AuthenticationUser {
             } else {
                 completion(.success(result?.user.description ?? "vazio"))
             }
+        }
+    }
+    
+    public func showUserInformation(viewController: UIViewController) {
+        guard let viewControllerUser = UIStoryboard(name: "UserInfo", bundle: Bundle.module).instantiateViewController(withIdentifier: "userInfo") as? UserInfoViewController else { return }
+        
+        viewController.navigationController?.pushViewController(viewControllerUser, animated: true)
+    }
+    
+    func updateUserInformation(user: UserAuth) {
+        guard let userAuthentication = Auth.auth().currentUser else { return }
+        let updateChanges = userAuthentication.createProfileChangeRequest()
+        updateChanges.displayName = user.name
+        updateChanges.commitChanges { error in
+            print("displayname error")
+        }
+        userAuthentication.updateEmail(to: user.email) { error in
+            print("email error")
         }
     }
 }

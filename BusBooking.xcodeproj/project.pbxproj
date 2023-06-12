@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5526944F2A2769C700B00F14 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5526944E2A2769C700B00F14 /* LoginViewModel.swift */; };
 		553D351629F6E1DF00A6D051 /* Modules in Frameworks */ = {isa = PBXBuildFile; productRef = 553D351529F6E1DF00A6D051 /* Modules */; };
+		5574A9932A15156A008E8CDE /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574A9922A15156A008E8CDE /* BaseTextField.swift */; };
 		55E9A2DF2A086613001ECF08 /* PromotionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9A2DE2A086613001ECF08 /* PromotionViewModel.swift */; };
+		55EF4C8E2A0D0DE000291126 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EF4C8D2A0D0DE000291126 /* LoginView.swift */; };
+		55EF4C902A0D10E000291126 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EF4C8F2A0D10E000291126 /* LoginViewController.swift */; };
 		CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0328AC054200C5DAB0 /* AppDelegate.swift */; };
 		CE050D0628AC054200C5DAB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */; };
 		CE050D0828AC054200C5DAB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050D0728AC054200C5DAB0 /* HomeViewController.swift */; };
@@ -59,9 +63,13 @@
 
 /* Begin PBXFileReference section */
 		550FD8F42A005DDF00D8D5B2 /* BusBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		550FD8F52A005DDF00D8D5B2 /* BusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5526944E2A2769C700B00F14 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		553D351329F6E0D500A6D051 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
+		5574A9912A150F5A008E8CDE /* BusBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5574A9922A15156A008E8CDE /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
 		55E9A2DE2A086613001ECF08 /* PromotionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionViewModel.swift; sourceTree = "<group>"; };
+		55EF4C8D2A0D0DE000291126 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		55EF4C8F2A0D10E000291126 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE050D0328AC054200C5DAB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE050D0528AC054200C5DAB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE050D0728AC054200C5DAB0 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55EF4C8C2A0D0D9D00291126 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				55EF4C8D2A0D0DE000291126 /* LoginView.swift */,
+				55EF4C8F2A0D10E000291126 /* LoginViewController.swift */,
+				5526944E2A2769C700B00F14 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		CE050CF728AC054200C5DAB0 = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +145,7 @@
 				CE050D0228AC054200C5DAB0 /* BusBooking */,
 				CE52595829DAFC970024FFE5 /* BusBookingTests */,
 				550FD8F42A005DDF00D8D5B2 /* BusBooking.app */,
-				550FD8F52A005DDF00D8D5B2 /* BusBookingTests.xctest */,
+				5574A9912A150F5A008E8CDE /* BusBookingTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,13 +154,14 @@
 			children = (
 				CEEC6EB029D70EDB00A5E419 /* GoogleService-Info.plist */,
 				CE050D1128AC054400C5DAB0 /* Info.plist */,
-				CE050D0E28AC054400C5DAB0 /* LaunchScreen.storyboard */,
 				CE4BCC5528CA2DFF00C97FF5 /* Assets.xcassets */,
-				CE050D1D28AC095400C5DAB0 /* Resources */,
 				CE050D1728AC087900C5DAB0 /* AppDelegates */,
 				CE050D1828AC088900C5DAB0 /* Home */,
-				CE2CABED28B90FFB009C9F2D /* Travel */,
+				CE050D0E28AC054400C5DAB0 /* LaunchScreen.storyboard */,
+				55EF4C8C2A0D0D9D00291126 /* Login */,
+				CE050D1D28AC095400C5DAB0 /* Resources */,
 				CEBA896928C7BFDE002205D7 /* Seats */,
+				CE2CABED28B90FFB009C9F2D /* Travel */,
 			);
 			path = BusBooking;
 			sourceTree = "<group>";
@@ -209,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				CE2A052F290C268000B8D2F8 /* BaseViewController.swift */,
+				5574A9922A15156A008E8CDE /* BaseTextField.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -406,7 +426,7 @@
 			packageProductDependencies = (
 			);
 			productName = BusBookingTests;
-			productReference = 550FD8F52A005DDF00D8D5B2 /* BusBookingTests.xctest */;
+			productReference = 5574A9912A150F5A008E8CDE /* BusBookingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -477,6 +497,7 @@
 			files = (
 				CE2AC23D28BD410E00ADEDCE /* ListTravelViewCell.swift in Sources */,
 				CE9820CE28D4F3F800BEFC11 /* Colors.swift in Sources */,
+				5526944F2A2769C700B00F14 /* LoginViewModel.swift in Sources */,
 				CE413F4C29D5D68E00CC99BB /* LocalService.swift in Sources */,
 				CE527FD828B7FA4B002CE548 /* Cities.swift in Sources */,
 				CE2CABF228B9148E009C9F2D /* Travels.swift in Sources */,
@@ -488,11 +509,14 @@
 				CE4BCC5428CA230500C97FF5 /* SeatCollectionViewCell.swift in Sources */,
 				CEBA897328C7DC09002205D7 /* SeatsCollectionViewController.swift in Sources */,
 				CE413F4929D5D28F00CC99BB /* Promotion.swift in Sources */,
+				55EF4C902A0D10E000291126 /* LoginViewController.swift in Sources */,
 				CEBA896F28C7D676002205D7 /* SeatsView.swift in Sources */,
 				CE34D1F9296C837400209F76 /* SeatsConstants.swift in Sources */,
 				CED8427829D5FA7000022BF5 /* UIImage+Extension.swift in Sources */,
 				CE050D2028AC098F00C5DAB0 /* ViewCodeProtocol.swift in Sources */,
+				5574A9932A15156A008E8CDE /* BaseTextField.swift in Sources */,
 				CE2CABEF28B9104B009C9F2D /* ListTravelTableViewController.swift in Sources */,
+				55EF4C8E2A0D0DE000291126 /* LoginView.swift in Sources */,
 				CE050D0428AC054200C5DAB0 /* AppDelegate.swift in Sources */,
 				CE2CABEC28B8F5BD009C9F2D /* Travel.swift in Sources */,
 				55E9A2DF2A086613001ECF08 /* PromotionViewModel.swift in Sources */,
@@ -668,7 +692,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,7 +724,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -727,7 +751,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2HX6PAF8Z8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.malengo.BusBookingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -752,7 +776,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2HX6PAF8Z8;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.malengo.BusBookingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
